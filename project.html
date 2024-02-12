@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dozzer project</title>
+</head>
+<link rel="stylesheet" href="css/style1.css">
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Grape+Nuts&display=swap');
+    body{
+        margin: 0px;
+        padding:0px;
+        height: 500px;
+        width: 300px;
+       
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-attachment: fixed; 
+        cursor: pointer;
+        background-size: 100% 100%; 
+        /* min-height: 100vh; */
+        /* background: linear-gradient(#705a93,#a25ca2); */
+        z-index: 1;
+        font-family:  "Baloo Bhai 2", sans-serif;
+
+    }
+    .navbar{
+        color: rgb(16, 15, 14);
+        display:inline block;
+        /* margin-left: 14cm; */
+        /* padding: 0%; */
+        display: flex;
+        /* width: 33px;  */ 
+        position: absolute;
+        top: 0;
+        /* left: 20px; */
+        right: 100px;
+    
+        /* background-color: beige; */
+        /* height: 33px; */
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        
+    }
+    .navbar li{
+        display: inline-block; 
+        font-size: 30px;
+        margin-left: 23px;
+        justify-content: center;
+        align-items: left;
+        left: 20px;
+        padding-right: 20px;
+        /* background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0px; */
+    }
+    .navbar li a{
+        padding: 6px 15px;
+        border-radius: 20px;
+        color: rgb(26, 24, 21);
+        text-decoration: none;
+        /* position: absolute;
+        top: 0;
+        right: 1100px; */
+
+       
+
+        
+        
+        /* padding: 6px 15px; */ 
+
+    }
+    .navbar li:hover{
+        text-decoration:underline; 
+        color: gray;
+        background-color: #fff;
+        border-radius: 20px; 
+        left: 200px;  
+        z-index: 1;
+        transition: 0.5s;
+        box-shadow: 7px 5px rgb(130, 138, 95);
+        justify-content: center;
+       
+    }
+
+
+    
+    .btn{
+        position: absolute;
+        bottom: 55px;
+        right: 143px;
+        /* background-color: yellow; */
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none; 
+        display: inline-block;       
+    }
+    
+.btn h2{
+    padding: 8px 30px;
+    border-radius: 30px;
+    background: wheat;
+    color: #2b1055;
+    /* z-index: 9; */
+    text-decoration: none;
+    
+
+
+}
+
+.btn h2:hover{
+    background-color: aliceblue;
+}
+section img{
+    
+    width: 945px;
+    height: 550px;
+    position: absolute;
+    top: 70px;
+    left: 550px;
+    right: 10px;
+    bottom: 90px;
+    align-items: center;
+    object-fit: cover; 
+    /* mix-blend-mode: stroke;  */
+    background-color: none;
+    display: flex;
+    z-index: 100;
+    color: #fff;
+
+}
+#dozzer{
+    background-color: none;
+    /* mix-blend-mode: multiply;  */
+    z-index: 2;
+    color: wheat;
+    /* mix-blend-mode:saturation; */
+    filter: brightness(100%);
+    
+
+}
+#stars{
+    background-color: none;
+    mix-blend-mode: multiply; 
+    height: 100%;
+    width: 100%; 
+    
+    align-items: center;
+    object-fit: cover;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    z-index: -1;
+    /* min-height: 100vh; */
+    /* width: 500px; */
+    
+
+}
+.gun{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    margin-top: 160px;
+    margin-left: 136px;
+    background-color: #fff;
+    background: transparent; 
+    border: 2px solid rgb(132 100 100 / 50%);
+    border-radius: 20px;
+    backdrop-filter:blur(80px);
+    box-shadow:0 0 40px rgb(70, 64, 64);
+    border-radius: 30px;
+}
+.gun p {
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 40px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 32px;
+    color: #565654;
+
+
+}
+/* .nav {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    mix-blend-mode: multiply;
+    display: block;
+
+} */
+.header{
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    font-size: 40px;
+    /* mix-blend-mode: multiply; */
+
+}
+
+</style>
+<body>
+    <nav>
+
+    </nav>
+   
+
+    <header>
+        <div class="header">
+            <ul class="navbar">
+               
+                <li><a href="#"></a>Login</li>
+                <li><a href="#"></a>Register</li>
+                <li><a href="about.html" class="active">About</a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <div class="gun">
+                <p>
+                    Turning Challenges into Dust: 
+                    Bulldozing the Future, One Site at a Time.
+
+                </p>
+                <!-- <p> Bulldozing the Future, One Site at a Time."</p> -->
+                <div class="btn">
+                    <h2>Explore > </h2>
+                </div>
+                   
+                </div>
+                
+
+            </div>
+        
+            </div>
+    
+       
+
+        
+    </header>
+    <section>
+        <img src="gr1.png" id="dozzer">
+        <img src="gr.jpg" id="stars">
+    </section>
+
+</body>
+</html>
