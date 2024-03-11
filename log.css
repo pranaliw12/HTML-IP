@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+body {
+    background-color: #e2d4b5;
+    height: 400px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 500px;
+    top:90px;
+}
+    center {
+    text-align: center;
+    margin-top: 50px;
+    }
+    h1 {
+    color: #675d40;
+    font-family: "Kode Mono", monospace;
+    text-shadow: 3px 5px rgb(255, 255, 255);
+    }
+    form {
+    max-width: 550px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+    margin-bottom: 75px;
+    }
+    input[type="text"],
+    input[type="Password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    }
+    input[type="Submit"],
+    input[type="Reset"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    }
+    input[type="Submit"]:hover,
+    input[type="Reset"]:hover {
+    background-color: #0056b3;
+    }
