@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .message-container {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 0;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: slideIn 1s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .thanks-animation {
+        animation: colorChange 2s infinite alternate;
+    }
+
+    @keyframes colorChange {
+        0% {
+            color: #333;
+        }
+        50% {
+            color: #ff6600;
+        }
+        100% {
+            color: #333;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="message-container">
+    <h1 class="thanks-animation">Thank You for Shopping With Us!</h1>
+</div>
+</body>
+</html>

@@ -266,6 +266,7 @@ section img  {
     border-color: #5e523a;
     box-shadow: 7px 5px rgb(16, 17, 12);
     text-decoration: solid;
+    object-fit: cover;
     
 }
 .select li a{
@@ -334,7 +335,7 @@ video{
     height: 20px;
     font-size: 10px;
     font-style: italic;
-    font-weight:800 ;
+    font-weight:700px ;
     position: absolute;
     right:30px ;
     bottom: 20px;
@@ -342,45 +343,97 @@ video{
 }
 #doz{
     height: 400px;
-    width: 100px;
+    width: 150px;
     background-color:#fff;
+    display: flex;
+    object-fit: cover;
 
 
 }
 #poc{
     height: 400px;
-    width: 100px;
+    width: 150px;
     background-color:#fff;
+    display: flex;
+    object-fit: cover;
 
 
 }
 #dam{
     height: 400px;
-    width: 100px;
+    width: 150px;
     background-color:#fff;
+    display: flex;
+    object-fit: cover;
+
 
 
 }
 #doz3{
+    display: flex;
     position:absolute ;
+    top: 100px;
     left: -70px;
     height: 255px;
     width: 240px;
 }
 #poc1{
+    display: flex;
     position: absolute;
-    left: 260px;
+    top: 100px;
+    left: 320px;
     height: 255px;
     width: 240px;
 
 }
 #dam1{
+    display: flex;
     position: absolute; 
-    left: 600px; 
+    top: 100px;
+    left: 710px; 
     /* right: 250px;s */
     height: 255px;
     width: 240px;
 
 
 } 
+#doz3 img:hover{
+    display: none;
+    z-index: -1;
+   
+
+  
+
+}
+#doz:hover{
+    z-index: 1;
+    font-size: 36px;
+    background-color: #b9a882;
+
+}
+.select li:hover{
+    background-color:#b9a882;
+  
+}
+#poc:hover{
+    background-color: #b9a882;
+    z-index: 1;
+    font-size: 36px;
+}
+#poc1:hover{
+    z-index: -1;
+    display: none;
+}
+#dam:hover{
+    z-index: 1;
+    background-color: #b9a882;
+    font-size: 36px;
+}
+#dam1:hover{
+    z-index: -1;
+    display: none;
+
+}
+
+    
 
