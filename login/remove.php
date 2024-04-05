@@ -1,9 +1,9 @@
 <?php
-// Database connection
-$servername = "localhost"; // Change this if your MySQL server is hosted elsewhere
-$username = "root"; // Your MySQL username
-$password = ""; // Your MySQL password
-$database = "register"; // Your MySQL database name
+// Database connection details
+$servername = "localhost";
+$username = "root"; // Replace with your MySQL username
+$password = ""; // Replace with your MySQL password
+$database = "register"; // Replace with your MySQL database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
@@ -13,35 +13,19 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve email and password from the form
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+// Retrieve email from the form
+$email = $_POST['email'];
 
-    // Prepare SQL statement to delete data from the table
-    $sql = "DELETE FROM details WHERE email = $email ";
+// Query to remove data based on email
+$sql = "DELETE FROM registration WHERE email = '$email'";
 
-    // Prepare and bind parameters
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $email, $password);
-
-    // Execute the query
-    if ($stmt->execute() === TRUE) {
-        echo "Account removed successfully";
-    } else {
-        echo "Error removing account: " . $conn->error;
-    }
-
-    // Close statement
-    $stmt->close();
+// Execute the query
+if ($conn->query($sql) === TRUE) {
+    echo "Record removed successfully";
 } else {
-    echo "Invalid request method";
+    echo "Error removing record: " . $conn->error;
 }
 
 // Close connection
 $conn->close();
 ?>
-
-</body>
-</html>
